@@ -1,6 +1,6 @@
 feature 'viewing the list of links' do
   scenario 'I can see the list of links' do
-    Link.create(url: 'www.google.com', name: 'Google')
+    Link.create(url: 'www.google.com', title: 'Google')
     visit('/links')
 
     # sanity check
