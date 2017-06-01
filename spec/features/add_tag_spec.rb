@@ -7,6 +7,7 @@ feature 'adding tags' do
     fill_in 'url', with: 'www.duckduckgo.com'
     fill_in 'tag_name', with: 'Amazing'
     click_button('Submit')
-    expect(page).to have_content('Amazing')
+    link = Link.first
+    expect(link.tags.map(&:tag_name)).to include('Amazing')
   end
 end
