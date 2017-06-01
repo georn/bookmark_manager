@@ -9,6 +9,7 @@ require "simplecov"
 require "simplecov-console"
 
 require './app/models/link'
+require './app/app.rb'
 
 Capybara.app = BookmarkManager
 
