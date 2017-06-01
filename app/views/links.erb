@@ -4,6 +4,6 @@
   <% @links.each do |link| %>
     <li>Title: <%= link.title %></li>
     <li>URL: <%= link.url %></li>
-    <li>Tags: <% @tags.each do |tag| %> <%= tag.tag_name %> <% end %></li>
+    <li>Tags: <%= link.tag_name %> </li>
   <% end %>
 </ul>
