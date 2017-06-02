@@ -1,5 +1,5 @@
 feature 'adding tags' do
-  scenario 'has tag field' do
+  scenario 'adding a tag to a link' do
     visit('links/new')
     expect(page.status_code).to eq 200
     expect(page).to have_field('tag_name')
