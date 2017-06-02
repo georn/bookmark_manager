@@ -16,7 +16,7 @@ feature 'we can filter link by tags' do
       expect(page).not_to have_content('Makers Academy')
       expect(page).not_to have_content('Google')
       expect(page).to have_content('This is Zombo')
-      expect(page).to have_content('Bubble Booble')
+      expect(page).to have_content('Bubble Bobble')
     end
   end
 end
